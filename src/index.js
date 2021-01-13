@@ -1,15 +1,20 @@
 /**
- * WordPress dependencies.
+ * External dependencies.
  */
 
-import { __ } from '@wordpress/i18n'
-import { Fragment } from '@wordpress/element'
-import { PluginSidebarMoreMenuItem, PluginSidebar } from '@wordpress/edit-post'
-import { registerPlugin } from '@wordpress/plugins'
+/**
+ * WordPress dependencies.
+ */
+const { wp } = window
+const { __ } = wp.i18n
+const { Fragment } = wp.element
+const { PluginSidebarMoreMenuItem, PluginSidebar } = wp.editPost
+const { registerPlugin } = wp.plugins
+
 /**
  * Sidebar component voor the gutenberg editor.
  */
-function Sidebar() {
+function Sidebara() {
     return (
         <Fragment>
             <PluginSidebarMoreMenuItem
@@ -40,5 +45,5 @@ function Sidebar() {
  */
 registerPlugin('metatags', {
     icon: 'editor-customchar',
-    render: Sidebar,
+    render: Sidebara,
 })
