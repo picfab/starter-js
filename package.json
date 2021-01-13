@@ -5,20 +5,39 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./",
-    "start":"webpack --mode development"
+    "start": "webpack --watch  --mode='development'",
+    "build": "webpack  --mode='production'"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "babel-loader": "^8.2.2",
-    "eslint": "^7.17.0",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.12.5",
+    "@wordpress/scripts": "^12.5.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1",
-    "webpack": "^5.13.0",
-    "webpack-cli": "^4.3.1"
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "ignore-emit-webpack-plugin": "^2.0.5",
+    "mini-css-extract-plugin": "^1.2.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   },
   "author": "Fabien Picard",
-  "license": "ISC"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@wordpress/block-editor": "^5.2.1",
+    "@wordpress/edit-post": "^3.26.1",
+    "@wordpress/element": "^2.19.0",
+    "@wordpress/i18n": "^3.17.0",
+    "@wordpress/icons": "^2.9.0",
+    "@wordpress/plugins": "^2.24.1"
+  }
 }

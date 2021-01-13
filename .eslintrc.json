@@ -7,14 +7,15 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-
+    "parser": "babel-eslint",
     "extends": [
-        "airbnb-base","prettier"
+        "airbnb-base","prettier",
+        "plugin:react/recommended"
     ],
     "plugins":["prettier"],
     "rules": {
         "semi": [2, "never"],
-        "no-console": ["error", { "allow": ["log","warn", "error"] }]
-
+        "no-console": ["error", { "allow": ["log","warn", "error"] }],
+        "react/react-in-jsx-scope": "off"
     }
 }

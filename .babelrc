@@ -1,11 +1,6 @@
 {
-    "presets":  [
-        ["@babel/preset-env",
-            {
-                "targets":  {
-                    "browsers":  [">0.25%",  "ie >= 11"]
-                }
-            }
-        ]
-    ]
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
 }
